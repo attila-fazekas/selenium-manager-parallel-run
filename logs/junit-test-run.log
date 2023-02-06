@@ -1,0 +1,679 @@
+Starting Gradle Daemon...
+Gradle Daemon started in 2 s 455 ms
+
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources UP-TO-DATE
+> Task :testClasses UP-TO-DATE
+> Task :test
+Feb 06, 2023 6:29:09 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+INFO: Loading JUnit Platform configuration parameters from classpath resource [file:/Users/attila/projects/selenium-manager-parallel-run/build/resources/test/junit-platform.properties].
+Feb 06, 2023 6:29:09 PM org.junit.platform.launcher.core.LauncherConfigurationParameters loadClasspathResource
+INFO: Loading JUnit Platform configuration parameters from classpath resource [file:/Users/attila/projects/selenium-manager-parallel-run/build/resources/test/junit-platform.properties].
+18:29:10.236 [ForkJoinPool-1-worker-1] INFO  junit.ParallelRunDriverServiceTests - temp dir: /var/folders/zv/7mxdcrxj6_v82mq3d2nqty3c0000gn/T/
+18:29:10.240 [ForkJoinPool-1-worker-1] INFO  o.j.j.e.c.EnumConfigurationParameterConverter - Using parallel execution mode 'CONCURRENT' set via the 'junit.jupiter.execution.parallel.mode.default' configuration parameter.
+18:29:10.250 [ForkJoinPool-1-worker-5] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test13() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.251 [ForkJoinPool-1-worker-2] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test10() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.251 [ForkJoinPool-1-worker-7] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test15() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.251 [ForkJoinPool-1-worker-6] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test14() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.252 [ForkJoinPool-1-worker-4] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test12() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.251 [ForkJoinPool-1-worker-1] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test9() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.252 [ForkJoinPool-1-worker-3] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test11() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.252 [ForkJoinPool-1-worker-8] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test16() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.372 [ForkJoinPool-1-worker-10] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test2() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.372 [ForkJoinPool-1-worker-9] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test1() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+
+The path to the driver executable The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/. The latest version can be downloaded from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/. The latest version can be downloaded from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:42)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:257)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:122)
+	at junit.ParallelRunDriverServiceTests.test2(ParallelRunDriverServiceTests.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:185)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.remote.service.DriverService.stop()" because "this.ds" is null
+		at junit.ParallelRunDriverServiceTests.stopDriverService(ParallelRunDriverServiceTests.java:32)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+		at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:126)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptAfterEachMethod(TimeoutExtension.java:108)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+		at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:506)
+		at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeAfterEachMethodAdapter$22(ClassBasedTestDescriptor.java:496)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachMethods$10(TestMethodTestDescriptor.java:240)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:273)
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:273)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:272)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachMethods(TestMethodTestDescriptor.java:238)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+		... 16 more
+
+18:29:10.670 [ForkJoinPool-1-worker-10] WARN  o.o.selenium.manager.SeleniumManager - IOException running command [/var/folders/zv/7mxdcrxj6_v82mq3d2nqty3c0000gn/T/selenium-manager278531759337309965455210863359579/selenium-manager, --driver, msedgedriver]: Cannot run program "/var/folders/zv/7mxdcrxj6_v82mq3d2nqty3c0000gn/T/selenium-manager278531759337309965455210863359579/selenium-manager": error=13, Permission denied
+18:29:10.671 [ForkJoinPool-1-worker-10] WARN  o.o.s.remote.service.DriverService - Unable to obtain driver using Selenium Manager: The driver executable must exist: /Users/attila/projects/selenium-manager-parallel-run
+
+The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:147)
+	at junit.ParallelRunDriverServiceTests.test1(ParallelRunDriverServiceTests.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:185)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.remote.service.DriverService.stop()" because "this.ds" is null
+		at junit.ParallelRunDriverServiceTests.stopDriverService(ParallelRunDriverServiceTests.java:32)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+		at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:126)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptAfterEachMethod(TimeoutExtension.java:108)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+		at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:506)
+		at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeAfterEachMethodAdapter$22(ClassBasedTestDescriptor.java:496)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachMethods$10(TestMethodTestDescriptor.java:240)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:273)
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:273)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:272)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachMethods(TestMethodTestDescriptor.java:238)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+		... 16 more
+
+18:29:10.687 [ForkJoinPool-1-worker-10] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test3() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.693 [ForkJoinPool-1-worker-10] WARN  o.o.selenium.manager.SeleniumManager - IOException running command [/var/folders/zv/7mxdcrxj6_v82mq3d2nqty3c0000gn/T/selenium-manager278531759337309965455210863359579/selenium-manager, --driver, geckodriver]: Cannot run program "/var/folders/zv/7mxdcrxj6_v82mq3d2nqty3c0000gn/T/selenium-manager278531759337309965455210863359579/selenium-manager": error=13, Permission denied
+18:29:10.693 [ForkJoinPool-1-worker-9] WARN  o.o.selenium.manager.SeleniumManager - IOException running command [/var/folders/zv/7mxdcrxj6_v82mq3d2nqty3c0000gn/T/selenium-manager278531759337309965455210863359579/selenium-manager, --driver, chromedriver]: Cannot run program "/var/folders/zv/7mxdcrxj6_v82mq3d2nqty3c0000gn/T/selenium-manager278531759337309965455210863359579/selenium-manager": error=13, Permission denied
+18:29:10.693 [ForkJoinPool-1-worker-10] WARN  o.o.s.remote.service.DriverService - Unable to obtain driver using Selenium Manager: The driver executable must exist: /Users/attila/projects/selenium-manager-parallel-run
+18:29:10.693 [ForkJoinPool-1-worker-9] WARN  o.o.s.remote.service.DriverService - Unable to obtain driver using Selenium Manager: The driver executable must exist: /Users/attila/projects/selenium-manager-parallel-run
+
+The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:47)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:164)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:100)
+	at junit.ParallelRunDriverServiceTests.test3(ParallelRunDriverServiceTests.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:185)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.remote.service.DriverService.stop()" because "this.ds" is null
+		at junit.ParallelRunDriverServiceTests.stopDriverService(ParallelRunDriverServiceTests.java:32)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+		at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:126)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptAfterEachMethod(TimeoutExtension.java:108)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+		at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:506)
+		at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeAfterEachMethodAdapter$22(ClassBasedTestDescriptor.java:496)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachMethods$10(TestMethodTestDescriptor.java:240)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:273)
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:273)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:272)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachMethods(TestMethodTestDescriptor.java:238)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+		... 16 more
+
+18:29:10.695 [ForkJoinPool-1-worker-10] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test4() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.695 [ForkJoinPool-1-worker-9] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test5() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.701 [ForkJoinPool-1-worker-9] WARN  o.o.selenium.manager.SeleniumManager - IOException running command [/var/folders/zv/7mxdcrxj6_v82mq3d2nqty3c0000gn/T/selenium-manager278531759337309965455210863359579/selenium-manager, --driver, msedgedriver]: Cannot run program "/var/folders/zv/7mxdcrxj6_v82mq3d2nqty3c0000gn/T/selenium-manager278531759337309965455210863359579/selenium-manager": error=13, Permission denied
+18:29:10.701 [ForkJoinPool-1-worker-9] WARN  o.o.s.remote.service.DriverService - Unable to obtain driver using Selenium Manager: The driver executable must exist: /Users/attila/projects/selenium-manager-parallel-run
+
+The path to the driver executable The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/. The latest version can be downloaded from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/. The latest version can be downloaded from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:42)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:257)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:122)
+	at junit.ParallelRunDriverServiceTests.test5(ParallelRunDriverServiceTests.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:185)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.remote.service.DriverService.stop()" because "this.ds" is null
+		at junit.ParallelRunDriverServiceTests.stopDriverService(ParallelRunDriverServiceTests.java:32)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+		at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:126)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptAfterEachMethod(TimeoutExtension.java:108)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+		at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:506)
+		at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeAfterEachMethodAdapter$22(ClassBasedTestDescriptor.java:496)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachMethods$10(TestMethodTestDescriptor.java:240)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:273)
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:273)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:272)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachMethods(TestMethodTestDescriptor.java:238)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+		... 16 more
+
+18:29:10.703 [ForkJoinPool-1-worker-9] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test6() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.719 [ForkJoinPool-1-worker-9] WARN  o.o.selenium.manager.SeleniumManager - IOException running command [/var/folders/zv/7mxdcrxj6_v82mq3d2nqty3c0000gn/T/selenium-manager278531759337309965455210863359579/selenium-manager, --driver, msedgedriver]: Cannot run program "/var/folders/zv/7mxdcrxj6_v82mq3d2nqty3c0000gn/T/selenium-manager278531759337309965455210863359579/selenium-manager": error=13, Permission denied
+18:29:10.719 [ForkJoinPool-1-worker-9] WARN  o.o.s.remote.service.DriverService - Unable to obtain driver using Selenium Manager: The driver executable must exist: /Users/attila/projects/selenium-manager-parallel-run
+
+The path to the driver executable The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/. The latest version can be downloaded from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/. The latest version can be downloaded from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:42)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:257)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:122)
+	at junit.ParallelRunDriverServiceTests.test6(ParallelRunDriverServiceTests.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:185)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.remote.service.DriverService.stop()" because "this.ds" is null
+		at junit.ParallelRunDriverServiceTests.stopDriverService(ParallelRunDriverServiceTests.java:32)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+		at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:126)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptAfterEachMethod(TimeoutExtension.java:108)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+		at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:506)
+		at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeAfterEachMethodAdapter$22(ClassBasedTestDescriptor.java:496)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachMethods$10(TestMethodTestDescriptor.java:240)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:273)
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:273)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:272)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachMethods(TestMethodTestDescriptor.java:238)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+		... 16 more
+
+18:29:10.721 [ForkJoinPool-1-worker-9] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test7() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:10.733 [ForkJoinPool-1-worker-9] WARN  o.o.selenium.manager.SeleniumManager - IOException running command [/var/folders/zv/7mxdcrxj6_v82mq3d2nqty3c0000gn/T/selenium-manager278531759337309965455210863359579/selenium-manager, --driver, geckodriver]: Cannot run program "/var/folders/zv/7mxdcrxj6_v82mq3d2nqty3c0000gn/T/selenium-manager278531759337309965455210863359579/selenium-manager": error=13, Permission denied
+18:29:10.733 [ForkJoinPool-1-worker-9] WARN  o.o.s.remote.service.DriverService - Unable to obtain driver using Selenium Manager: The driver executable must exist: /Users/attila/projects/selenium-manager-parallel-run
+
+The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:47)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:164)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:100)
+	at junit.ParallelRunDriverServiceTests.test7(ParallelRunDriverServiceTests.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:185)
+	at java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.remote.service.DriverService.stop()" because "this.ds" is null
+		at junit.ParallelRunDriverServiceTests.stopDriverService(ParallelRunDriverServiceTests.java:32)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+		at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:126)
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptAfterEachMethod(TimeoutExtension.java:108)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+		at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+		at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:506)
+		at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeAfterEachMethodAdapter$22(ClassBasedTestDescriptor.java:496)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachMethods$10(TestMethodTestDescriptor.java:240)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:273)
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:273)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:272)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachMethods(TestMethodTestDescriptor.java:238)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+		... 16 more
+
+18:29:10.735 [ForkJoinPool-1-worker-9] DEBUG o.j.j.e.execution.ConditionEvaluator - Evaluation of condition [org.junit.jupiter.engine.extension.DisabledCondition] on [void junit.ParallelRunDriverServiceTests.test8() throws java.io.IOException] resulted in: ConditionEvaluationResult [enabled = true, reason = '@Disabled is not present']
+18:29:11.191 [ForkJoinPool-1-worker-8] DEBUG org.openqa.selenium.net.UrlChecker - Waiting for http://localhost:48811/shutdown
+18:29:11.192 [ForkJoinPool-1-worker-4] DEBUG org.openqa.selenium.net.UrlChecker - Waiting for http://localhost:38262/shutdown
+18:29:11.204 [UrlChecker-3] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:48811/shutdown
+18:29:11.205 [UrlChecker-2] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:38262/shutdown
+18:29:11.210 [UrlChecker-3] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:48811/shutdown
+18:29:11.210 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:38262/shutdown
+18:29:11.214 [ForkJoinPool-1-worker-9] DEBUG org.openqa.selenium.net.UrlChecker - Waiting for http://localhost:27762/shutdown
+18:29:11.215 [UrlChecker-4] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:27762/shutdown
+18:29:11.216 [UrlChecker-4] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:27762/shutdown
+18:29:11.216 [UrlChecker-3] TRACE s.n.w.p.http.HttpURLConnection - Proxy used: DIRECT
+18:29:11.216 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - Proxy used: DIRECT
+18:29:11.217 [UrlChecker-4] TRACE s.n.w.p.http.HttpURLConnection - Proxy used: DIRECT
+18:29:11.219 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@cbe04385 pairs: {GET /shutdown HTTP/1.1: null}{User-Agent: Java/17.0.2}{Host: localhost:38262}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+18:29:11.218 [UrlChecker-3] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@1b67de265 pairs: {GET /shutdown HTTP/1.1: null}{User-Agent: Java/17.0.2}{Host: localhost:48811}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+18:29:11.218 [UrlChecker-4] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@46de4b0d5 pairs: {GET /shutdown HTTP/1.1: null}{User-Agent: Java/17.0.2}{Host: localhost:27762}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+18:29:11.296 [ForkJoinPool-1-worker-10] DEBUG org.openqa.selenium.net.UrlChecker - Waiting for http://localhost:1443/shutdown
+18:29:11.297 [UrlChecker-5] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:1443/shutdown
+18:29:11.298 [UrlChecker-5] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:1443/shutdown
+18:29:11.299 [UrlChecker-5] TRACE s.n.w.p.http.HttpURLConnection - Proxy used: DIRECT
+18:29:11.299 [UrlChecker-5] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@5d8680935 pairs: {GET /shutdown HTTP/1.1: null}{User-Agent: Java/17.0.2}{Host: localhost:1443}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+18:29:11.381 [UrlChecker-3] TRACE s.n.w.p.http.HttpURLConnection - KeepAlive stream used: http://localhost:48811/shutdown
+18:29:11.381 [UrlChecker-5] TRACE s.n.w.p.http.HttpURLConnection - KeepAlive stream used: http://localhost:1443/shutdown
+18:29:11.381 [UrlChecker-4] TRACE s.n.w.p.http.HttpURLConnection - KeepAlive stream used: http://localhost:27762/shutdown
+18:29:11.383 [UrlChecker-5] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@577eebe38 pairs: {null: HTTP/1.1 404 Not Found}{Server: safaridriver [14610.1.28.1.10]}{Content-Type: application/json; charset=utf-8}{Date: Mon, 06 Feb 2023 17:29:11 GMT}{Accept-Ranges: bytes}{Content-Length: 109}{Cache-Control: no-cache}{Connection: keep-alive}
+18:29:11.383 [UrlChecker-4] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@3d9603978 pairs: {null: HTTP/1.1 404 Not Found}{Server: safaridriver [14610.1.28.1.10]}{Content-Type: application/json; charset=utf-8}{Date: Mon, 06 Feb 2023 17:29:11 GMT}{Accept-Ranges: bytes}{Content-Length: 109}{Cache-Control: no-cache}{Connection: keep-alive}
+18:29:11.383 [UrlChecker-3] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@f8ff4e78 pairs: {null: HTTP/1.1 404 Not Found}{Server: safaridriver [14610.1.28.1.10]}{Content-Type: application/json; charset=utf-8}{Date: Mon, 06 Feb 2023 17:29:11 GMT}{Accept-Ranges: bytes}{Content-Length: 109}{Cache-Control: no-cache}{Connection: keep-alive}
+18:29:11.431 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - KeepAlive stream used: http://localhost:38262/shutdown
+18:29:11.431 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@2230bfe38 pairs: {null: HTTP/1.1 404 Not Found}{Server: safaridriver [14610.1.28.1.10]}{Content-Type: application/json; charset=utf-8}{Date: Mon, 06 Feb 2023 17:29:11 GMT}{Accept-Ranges: bytes}{Content-Length: 109}{Cache-Control: no-cache}{Connection: keep-alive}
+Starting Microsoft Edge WebDriver 109.0.1518.78 (4e4b32c3816309813328e94787b814590ac1116d) on port 35677
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+18:29:21.056 [Driver Service Executor] DEBUG org.openqa.selenium.net.UrlChecker - Waiting for [http://localhost:1772/status]
+18:29:21.057 [UrlChecker-2] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:1772/status
+18:29:21.058 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:1772/status
+18:29:21.069 [UrlChecker-2] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:1772/status
+18:29:21.069 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:1772/status
+18:29:21.072 [Driver Service Executor] DEBUG org.openqa.selenium.net.UrlChecker - Waiting for [http://localhost:35677/status]
+18:29:21.072 [UrlChecker-4] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:35677/status
+18:29:21.072 [UrlChecker-4] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:35677/status
+Microsoft Edge WebDriver was started successfully.
+Starting Microsoft Edge WebDriver 109.0.1518.78 (4e4b32c3816309813328e94787b814590ac1116d) on port 1772
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+18:29:21.085 [UrlChecker-4] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:35677/status
+18:29:21.085 [UrlChecker-4] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:35677/status
+18:29:21.086 [UrlChecker-4] TRACE s.n.w.p.http.HttpURLConnection - Proxy used: DIRECT
+18:29:21.086 [UrlChecker-4] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@3867ed1e5 pairs: {GET /status HTTP/1.1: null}{User-Agent: Java/17.0.2}{Host: localhost:35677}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+18:29:21.087 [UrlChecker-4] TRACE s.n.w.p.http.HttpURLConnection - KeepAlive stream used: http://localhost:35677/status
+18:29:21.088 [UrlChecker-4] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@453f17a74 pairs: {null: HTTP/1.1 200 OK}{Content-Length: 213}{Content-Type: application/json; charset=utf-8}{cache-control: no-cache}
+Microsoft Edge WebDriver was started successfully.
+18:29:21.089 [ForkJoinPool-1-worker-2] DEBUG org.openqa.selenium.net.UrlChecker - Waiting for http://localhost:35677/shutdown
+18:29:21.089 [UrlChecker-4] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:35677/shutdown
+18:29:21.089 [UrlChecker-4] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:35677/shutdown
+18:29:21.090 [UrlChecker-4] TRACE s.n.w.p.http.HttpURLConnection - Proxy used: DIRECT
+18:29:21.090 [UrlChecker-4] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@690b58d25 pairs: {GET /shutdown HTTP/1.1: null}{User-Agent: Java/17.0.2}{Host: localhost:35677}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+18:29:21.090 [UrlChecker-2] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:1772/status
+18:29:21.091 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:1772/status
+18:29:21.091 [UrlChecker-4] TRACE s.n.w.p.http.HttpURLConnection - KeepAlive stream used: http://localhost:35677/shutdown
+18:29:21.091 [UrlChecker-4] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@640c74df3 pairs: {null: HTTP/1.1 200 OK}{Content-Length: 40}{Content-Type: application/json; charset=utf-8}
+18:29:21.091 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - Proxy used: DIRECT
+18:29:21.092 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@5ed3f0595 pairs: {GET /status HTTP/1.1: null}{User-Agent: Java/17.0.2}{Host: localhost:1772}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+18:29:21.093 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - KeepAlive stream used: http://localhost:1772/status
+18:29:21.093 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@52be84674 pairs: {null: HTTP/1.1 200 OK}{Content-Length: 213}{Content-Type: application/json; charset=utf-8}{cache-control: no-cache}
+18:29:21.094 [ForkJoinPool-1-worker-6] DEBUG org.openqa.selenium.net.UrlChecker - Waiting for http://localhost:1772/shutdown
+18:29:21.095 [UrlChecker-2] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:1772/shutdown
+18:29:21.095 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:1772/shutdown
+18:29:21.096 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - Proxy used: DIRECT
+18:29:21.097 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@9ce95425 pairs: {GET /shutdown HTTP/1.1: null}{User-Agent: Java/17.0.2}{Host: localhost:1772}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+18:29:21.099 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - KeepAlive stream used: http://localhost:1772/shutdown
+18:29:21.099 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@2e26ec3f3 pairs: {null: HTTP/1.1 200 OK}{Content-Length: 40}{Content-Type: application/json; charset=utf-8}
+18:29:21.102 [UrlChecker-4] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:35677/shutdown
+18:29:21.102 [UrlChecker-4] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:35677/shutdown
+18:29:21.110 [UrlChecker-2] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:1772/shutdown
+18:29:21.110 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:1772/shutdown
+Starting Microsoft Edge WebDriver 109.0.1518.78 (4e4b32c3816309813328e94787b814590ac1116d) on port 39382
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+18:29:22.047 [Driver Service Executor] DEBUG org.openqa.selenium.net.UrlChecker - Waiting for [http://localhost:39382/status]
+18:29:22.047 [UrlChecker-2] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:39382/status
+18:29:22.048 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:39382/status
+18:29:22.048 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - Proxy used: DIRECT
+18:29:22.049 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@6f36909a5 pairs: {GET /status HTTP/1.1: null}{User-Agent: Java/17.0.2}{Host: localhost:39382}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+18:29:22.054 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - KeepAlive stream used: http://localhost:39382/status
+18:29:22.055 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@498daca74 pairs: {null: HTTP/1.1 200 OK}{Content-Length: 213}{Content-Type: application/json; charset=utf-8}{cache-control: no-cache}
+18:29:22.056 [ForkJoinPool-1-worker-5] DEBUG org.openqa.selenium.net.UrlChecker - Waiting for http://localhost:39382/shutdown
+18:29:22.056 [UrlChecker-2] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:39382/shutdown
+18:29:22.057 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:39382/shutdown
+18:29:22.058 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - Proxy used: DIRECT
+18:29:22.058 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@341454515 pairs: {GET /shutdown HTTP/1.1: null}{User-Agent: Java/17.0.2}{Host: localhost:39382}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+18:29:22.060 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - KeepAlive stream used: http://localhost:39382/shutdown
+18:29:22.060 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@2dca01f83 pairs: {null: HTTP/1.1 200 OK}{Content-Length: 40}{Content-Type: application/json; charset=utf-8}
+18:29:22.073 [UrlChecker-2] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:39382/shutdown
+18:29:22.073 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:39382/shutdown
+Starting Microsoft Edge WebDriver 109.0.1518.78 (4e4b32c3816309813328e94787b814590ac1116d) on port 44879
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+18:29:22.921 [Driver Service Executor] DEBUG org.openqa.selenium.net.UrlChecker - Waiting for [http://localhost:44879/status]
+18:29:22.921 [UrlChecker-2] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:44879/status
+18:29:22.921 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:44879/status
+18:29:22.922 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - Proxy used: DIRECT
+18:29:22.922 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@7623e69b5 pairs: {GET /status HTTP/1.1: null}{User-Agent: Java/17.0.2}{Host: localhost:44879}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+18:29:22.923 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - KeepAlive stream used: http://localhost:44879/status
+18:29:22.923 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@526f846c4 pairs: {null: HTTP/1.1 200 OK}{Content-Length: 213}{Content-Type: application/json; charset=utf-8}{cache-control: no-cache}
+18:29:22.924 [ForkJoinPool-1-worker-1] DEBUG org.openqa.selenium.net.UrlChecker - Waiting for http://localhost:44879/shutdown
+18:29:22.924 [UrlChecker-2] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:44879/shutdown
+18:29:22.924 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:44879/shutdown
+18:29:22.925 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - Proxy used: DIRECT
+18:29:22.925 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@444fe4ac5 pairs: {GET /shutdown HTTP/1.1: null}{User-Agent: Java/17.0.2}{Host: localhost:44879}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+18:29:22.925 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - KeepAlive stream used: http://localhost:44879/shutdown
+18:29:22.926 [UrlChecker-2] DEBUG s.n.w.p.http.HttpURLConnection - sun.net.www.MessageHeader@3977f81c3 pairs: {null: HTTP/1.1 200 OK}{Content-Length: 40}{Content-Type: application/json; charset=utf-8}
+18:29:22.936 [UrlChecker-2] DEBUG org.openqa.selenium.net.UrlChecker - Polling http://localhost:44879/shutdown
+18:29:22.936 [UrlChecker-2] TRACE s.n.w.p.http.HttpURLConnection - ProxySelector Request for http://localhost:44879/shutdown
+1675704564163	geckodriver	INFO	Listening on 127.0.0.1:33254
+1675704564811	geckodriver	INFO	Listening on 127.0.0.1:2453
+
+ParallelRunDriverServiceTests > test2() FAILED
+    java.lang.IllegalStateException at ParallelRunDriverServiceTests.java:43
+ParallelRunDriverServiceTests > test3() FAILED
+    java.lang.IllegalStateException at ParallelRunDriverServiceTests.java:49
+ParallelRunDriverServiceTests > test1() FAILED
+    java.lang.IllegalStateException at ParallelRunDriverServiceTests.java:37
+ParallelRunDriverServiceTests > test5() FAILED
+    java.lang.IllegalStateException at ParallelRunDriverServiceTests.java:61
+ParallelRunDriverServiceTests > test6() FAILED
+    java.lang.IllegalStateException at ParallelRunDriverServiceTests.java:67
+ParallelRunDriverServiceTests > test7() FAILED
+    java.lang.IllegalStateException at ParallelRunDriverServiceTests.java:73
+16 tests completed, 6 failed
+> Task :test FAILED
+FAILURE: Build failed with an exception.
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///Users/attila/projects/selenium-manager-parallel-run/build/reports/tests/test/index.html
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+* Get more help at https://help.gradle.org
+BUILD FAILED in 26s
+3 actionable tasks: 1 executed, 2 up-to-date
+
